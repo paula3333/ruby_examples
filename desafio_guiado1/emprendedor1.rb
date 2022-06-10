@@ -1,13 +1,20 @@
 puts "CALCULO DE UTILIDADES"
 puts"--------------------------------------------------"
-print "Ingrese número de usuarios: "
-usuarios=ARGV[].to_i
 
-print "Ingrese precio de venta:  "
-precio_venta=ARGV[].to_i
-print "Ingrese gastos totales: "
-gastos=ARGV[].to_i
+usuarios=ARGV[0].to_i
+precio_venta=ARGV[1].to_i
+gastos=ARGV[2].to_i
+puts "Usuarios totales: #{usuarios} "
+puts "Precio de venta: #{precio_venta} "
+puts "Ingrese gastos totales: #{gastos}"
 utilidad=(precio_venta*usuarios)-gastos
-print "La tienda alcanza utilidades de #{utilidad}"
+if utilidad> 0
+    puts "La tienda alcanza utilidades de $#{utilidad}"
+elsif utilidad==0
+    puts "La tienda no alcanzó utilidades"
+else utilidad<0
+    puts "La tienda tiene perdidas de $#{utilidad.abs}"
+    
+end
 
 
