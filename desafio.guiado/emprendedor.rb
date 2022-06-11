@@ -1,4 +1,4 @@
-puts "Bienvenido al sistema de calculo de utilidad"
+puts "Calculo de utilidades"
 puts"-----------------------------------------------------"
 print"Ingresa el precio del producto: "
 precio=gets.chomp.to_i
