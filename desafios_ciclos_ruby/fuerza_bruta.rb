@@ -1,6 +1,6 @@
 print "Ingresa passaword para ver los intentos a generar: "
 contraena=gets.chomp
-texto=""
+texto="a"
 
 intentos=1
 
@@ -8,5 +8,6 @@ intentos=1
 while texto != contraena
     texto=texto.next
     intentos+=1
+    
 end
-puts "#{intentos} intentos"
+puts "#{intentos-1} intentos"
