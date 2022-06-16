@@ -222,12 +222,10 @@ def numero_0(tamano_z)
 end
 def navidad(navidad)
     puts " "
-    modulo=navidad%2
-    if modulo!=0
-        navidad0=(2*navidad)-1
-    elsif modulo==0
-        print " numero es par"
-    end
+    puts " "
+
+    navidad0=(2*navidad)-1
+
     separador=((navidad0/2)+1).to_i
     hojas=navidad-1
     tallo=hojas-2
