@@ -5,9 +5,9 @@ puts  numero= rand(0..2)
 #asignando valor del piedra papel o tijera al numero
 if numero == 0 
     puts eleccion_maquina = "piedra"
- elsif numero ==1
-       puts  eleccion_maquina = "papel"
- elsif numero == 2
+elsif numero ==1
+    puts  eleccion_maquina = "papel"
+elsif numero == 2
     puts eleccion_maquina = "tijera"
 end
 puts "----------------------------------------------------------------"
@@ -22,7 +22,7 @@ if eleccion_usuario == eleccion_maquina
 elsif eleccion_usuario == "tijera"  && eleccion_maquina == "piedra"   
     puts "perdistes"
 elsif  eleccion_usuario == "piedra"  && eleccion_maquina == "tijera" 
-      puts "ganastes"
+    puts "ganastes"
 elsif   eleccion_usuario == "papel"  && eleccion_maquina == "piedra"  
     puts "ganastes"
 elsif   eleccion_usuario == "piedra"  && eleccion_maquina == "papel"  
