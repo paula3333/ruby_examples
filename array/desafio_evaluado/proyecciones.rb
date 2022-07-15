@@ -15,9 +15,13 @@ def proyecciones(arreglo, a, i, j)
         
         end
     end
-    puts suma
+    suma
 end
 
-proyecciones(arreglo, 1.1 ,0, 5)
-proyecciones(arreglo, 1.2 ,6, 11)
+proyecciones_0=[]
+proyecciones_0[0]=proyecciones(arreglo, 1.1 ,0, 5)
+proyecciones_0[1]=proyecciones(arreglo, 1.2 ,6, 11)
+
+File.write("resultados.data", proyecciones_0.join("\n"))
+#print proyecciones_0
 
